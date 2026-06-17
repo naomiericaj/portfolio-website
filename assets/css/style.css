@@ -425,24 +425,56 @@ a {
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 22px;
+  grid-template-columns: 190px minmax(0, 1fr);
+  column-gap: 42px;
+  row-gap: 8px;
   align-items: start;
+  min-height: auto;
 }
 
 .timeline-item span {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: start;
   color: var(--muted);
   font-size: 13px;
   font-weight: 900;
   text-transform: uppercase;
+  line-height: 1.4;
 }
 
 .timeline-item h3 {
+  grid-column: 2;
+  grid-row: 1;
   margin: 0;
+  line-height: 1.25;
 }
 
 .timeline-item p {
-  margin-bottom: 0;
+  grid-column: 2;
+  grid-row: 2;
+  margin: 8px 0 0;
+  max-width: 760px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+@media (max-width: 760px) {
+  .timeline-item {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .timeline-item span,
+  .timeline-item h3,
+  .timeline-item p {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .timeline-item span {
+    margin-bottom: 4px;
+  }
 }
 
 .contact-card {
