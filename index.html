@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naomi Erica — Portfolio</title>
+  <meta name="description" content="Portfolio website of Naomi Erica, Information Systems for Business student and IT Specialist Internship candidate." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav">
+      <a href="#top" class="logo">Naomi Erica</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">IT Specialist Internship Candidate</p>
+        <h1>Hi, I’m Naomi — I build practical digital solutions with data, design, and web technology.</h1>
+        <p class="hero-text">
+          I am an Information Systems for Business student at Universitas Ciputra Surabaya with a strong interest in
+          IT support systems, inclusive design, data-driven applications, and user-focused web products.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="button primary">View My Projects</a>
+          <a href="#contact" class="button secondary">Contact Me</a>
+        </div>
+
+        <div class="quick-facts">
+          <article>
+            <strong>3.91</strong>
+            <span>Current GPA</span>
+          </article>
+          <article>
+            <strong>IELTS 8.0</strong>
+            <span>English Proficiency</span>
+          </article>
+          <article>
+            <strong>ISB</strong>
+            <span>Information Systems for Business</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="profile-orb">
+          <span>NE</span>
+        </div>
+
+        <h2>Naomi Erica</h2>
+        <p>Surabaya, Indonesia</p>
+
+        <div class="role-tags">
+          <span>Laravel</span>
+          <span>SQL</span>
+          <span>UI/UX</span>
+          <span>Data</span>
+          <span>IT Support</span>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About Me</p>
+        <h2>I enjoy solving real problems by connecting people, systems, and technology.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Profile</h3>
+          <p>
+            I am currently studying Information Systems for Business at Universitas Ciputra Surabaya. My academic and
+            project experience includes database design, data warehousing, UI/UX design, Laravel web development,
+            accessibility tools, and dashboard-style systems.
+          </p>
+          <p>
+            I am interested in technology that is useful, human-centered, and operationally clear. I enjoy building
+            projects that turn messy real-world processes into structured digital workflows.
+          </p>
+        </div>
+
+        <div class="about-card highlight-card">
+          <h3>What I bring</h3>
+          <ul class="clean-list">
+            <li>Technical curiosity and willingness to learn new systems</li>
+            <li>Experience building front-end prototypes and Laravel projects</li>
+            <li>Strong communication and leadership from student organizations</li>
+            <li>Careful documentation, coordination, and problem-solving mindset</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Projects</p>
+        <h2>Projects that show my technical skills, creativity, and user-centered thinking.</h2>
+      </div>
+
+      <div class="project-filter">
+        <button class="filter-button active" data-filter="all">All</button>
+        <button class="filter-button" data-filter="social">Social Impact</button>
+        <button class="filter-button" data-filter="it">IT Systems</button>
+        <button class="filter-button" data-filter="accessibility">Accessibility</button>
+        <button class="filter-button" data-filter="ecommerce">E-Commerce</button>
+        <button class="filter-button" data-filter="learning">Learning</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-category="social">
+          <div class="project-visual careconnect">
+            <span>CareConnect</span>
+          </div>
+          <div class="project-content">
+            <p class="project-type">Group Project · Social Impact Platform</p>
+            <h3>CareConnect — Orphanage Donation Needs Platform</h3>
+            <p>
+              A donation platform that helps donors discover specific orphanage needs by location, category, and urgency.
+              The project focuses on making donation requests clearer, more transparent, and more intentional.
+            </p>
+            <ul>
+              <li>Needs management and donor discovery workflow</li>
+              <li>Search and filtering for donation requests</li>
+              <li>Structured add/edit needs form for orphanage users</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="it">
+          <div class="project-visual campus">
+            <span>Campus IT Care Pro</span>
+          </div>
+          <div class="project-content">
+            <p class="project-type">Individual Project · IT Helpdesk System</p>
+            <h3>Campus IT Care Pro — QR-Based IT Helpdesk & SLA Dashboard</h3>
+            <p>
+              A QR-based campus IT support system for reporting, prioritizing, tracking, and resolving technical issues.
+              It includes ticket workflows, SLA logic, risk scoring, analytics, and exports.
+            </p>
+            <ul>
+              <li>MVC-style ticket architecture</li>
+              <li>SLA deadline and risk score calculation</li>
+              <li>Dashboard statistics, filtering, and JSON/CSV export</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="accessibility">
+          <div class="project-visual accessicheck">
+            <span>AccessiCheck Pro</span>
+          </div>
+          <div class="project-content">
+            <p class="project-type">Individual Project · Accessibility Tool</p>
+            <h3>AccessiCheck Pro — Inclusive Design & Accessibility Evaluation Tool</h3>
+            <p>
+              A technical accessibility tool that evaluates color readability using WCAG contrast ratio, AA/AAA checks,
+              APCA Lite estimation, readability risk, auto-fix suggestions, and design token audits.
+            </p>
+            <ul>
+              <li>Contrast engine and color utility logic</li>
+              <li>WCAG and APCA Lite accessibility evaluation</li>
+              <li>Palette audit, JSON export, and built-in test page</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="ecommerce">
+          <div class="project-visual sore">
+            <span>Sore Jewelry</span>
+          </div>
+          <div class="project-content">
+            <p class="project-type">Group Project · Laravel E-Commerce</p>
+            <h3>Sore Jewelry — Laravel E-Commerce Web Application</h3>
+            <p>
+              A Laravel-based jewelry e-commerce system with customer shopping features, admin product management,
+              checkout/payment flow, receipt email logic, Google login, and AI chatbot support.
+            </p>
+            <ul>
+              <li>Laravel MVC with models, controllers, routes, and Blade views</li>
+              <li>Product, cart, wishlist, order, payment, and email workflows</li>
+              <li>Google OAuth and chatbot product-support logic</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="learning">
+          <div class="project-visual sqlgarden">
+            <span>SQL Garden Pro</span>
+          </div>
+          <div class="project-content">
+            <p class="project-type">Individual Project · Gamified Learning System</p>
+            <h3>SQL Garden Pro — Gamified SQL Learning System</h3>
+            <p>
+              A gamified SQL learning system where users answer SQL questions, earn XP, build topic mastery, grow a
+              digital garden, and practice queries in a mini in-browser SQL playground.
+            </p>
+            <ul>
+              <li>MVC-style learning game architecture</li>
+              <li>XP, streak, level, accuracy, and topic mastery tracking</li>
+              <li>Mini SQL parser supporting SELECT, WHERE, ORDER BY, and COUNT(*)</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical and professional skills I use across my projects.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, PHP, Laravel, Blade, MVC structure, routing, controllers, forms, and localStorage prototypes.</p>
+        </article>
+
+        <article class="skill-card">
+          <h3>Database & Data</h3>
+          <p>SQL, MySQL, database design, relationships, migrations, data warehousing, BigQuery, Looker Studio, and dashboard thinking.</p>
+        </article>
+
+        <article class="skill-card">
+          <h3>UI/UX & Accessibility</h3>
+          <p>Figma, interface design, user flow planning, inclusive design, contrast checking, readability, and usability-focused layouts.</p>
+        </article>
+
+        <article class="skill-card">
+          <h3>IT & Operations</h3>
+          <p>Troubleshooting mindset, documentation, workflow organization, ticketing concepts, inventory tracking, and team coordination.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="section-heading">
+        <p class="eyebrow">Experience & Leadership</p>
+        <h2>I combine technical projects with teamwork, event operations, and leadership experience.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <span>2024 — Present</span>
+          <h3>Universitas Ciputra Surabaya</h3>
+          <p>Bachelor of Information Systems for Business. Current GPA: 3.91.</p>
+        </article>
+
+        <article class="timeline-item">
+          <span>Internship</span>
+          <h3>PT Dharma Anugerah Indah</h3>
+          <p>Supported daily operational and administrative workflows, documentation, data organization, and coordination.</p>
+        </article>
+
+        <article class="timeline-item">
+          <span>2026</span>
+          <h3>Vice President — Red Carpet Night</h3>
+          <p>Led event planning and execution across committees, timelines, logistics, and on-site decision-making.</p>
+        </article>
+
+        <article class="timeline-item">
+          <span>2025 — 2026</span>
+          <h3>Internal Department Member — ISB Student Union</h3>
+          <p>Helped organize internal activities, logistics, schedules, and team communication for student events.</p>
+        </article>
+
+        <article class="timeline-item">
+          <span>Achievements</span>
+          <h3>Awards & Languages</h3>
+          <p>IELTS Overall Band 8.0, World Scholar’s Cup Debate Gold Medal 2023, and SASMO Bronze Medal 2019.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s connect.</h2>
+          <p>
+            I am open to internship opportunities where I can grow as an IT Specialist, support real systems,
+            and contribute to meaningful digital products.
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:naomierica01@student.ciputra.ac.id">naomierica01@student.ciputra.ac.id</a>
+          <a href="tel:+6281257778585">+62 812 5777 8585</a>
+          <a href="https://www.linkedin.com/in/naomi-erica-b9864323b/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/naomiierica" target="_blank" rel="noopener">Instagram @naomiierica</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
