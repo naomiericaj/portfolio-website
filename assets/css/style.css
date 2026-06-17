@@ -377,7 +377,8 @@ a {
     linear-gradient(135deg, #111111, #f8e84e);
 }
 
-.sore {
+.sore,
+.sora {
   background:
     radial-gradient(circle at 70% 30%, rgba(255,255,255,0.34), transparent 18%),
     linear-gradient(135deg, #7c2d12, #f59e0b);
